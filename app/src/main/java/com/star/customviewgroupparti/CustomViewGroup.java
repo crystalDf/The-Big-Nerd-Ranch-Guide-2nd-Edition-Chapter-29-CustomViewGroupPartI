@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 public class CustomViewGroup extends ViewGroup {
+
     public CustomViewGroup(Context context) {
         super(context);
     }
@@ -134,4 +135,5 @@ public class CustomViewGroup extends ViewGroup {
             childView.layout(childLeft, childTop, childRight, childBottom);
         }
     }
+
 }
