@@ -33,15 +33,15 @@ public class CustomViewGroup extends ViewGroup {
         int heightMode = MeasureSpec.getMode(heightMeasureSpec);
         int heightSize = MeasureSpec.getSize(heightMeasureSpec);
 
-        int width = 0;
-        int height = 0;
+        int width;
+        int height;
 
         measureChildren(widthMeasureSpec, heightMeasureSpec);
 
-        int childWidth = 0;
-        int childHeight = 0;
+        int childWidth;
+        int childHeight;
 
-        MarginLayoutParams childMarginLayoutParams = null;
+        MarginLayoutParams childMarginLayoutParams;
 
         int childLeftTotalHeight = 0;
         int childTopTotalWidth = 0;
@@ -85,9 +85,9 @@ public class CustomViewGroup extends ViewGroup {
 
     @Override
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
-        int childWidth = 0;
-        int childHeight = 0;
-        MarginLayoutParams childMarginLayoutParams = null;
+        int childWidth;
+        int childHeight;
+        MarginLayoutParams childMarginLayoutParams;
 
         int childLeft = 0;
         int childTop = 0;
